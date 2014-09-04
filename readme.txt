@@ -5,7 +5,7 @@ Contributors: joerhoney,average.technology
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AF7P3TFKQ2C2
 Tags: wysiwym,wysiwyg,tinymce,element highlighter
 Requires at least: 3.0.1
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,7 +33,7 @@ Average WYSIWYG Helper also provides an option to cancel out certain default sty
 
 **Custom support tickets are available**
 
-See [Other Notes](http://wordpress.org/plugins/average-wysiwyg-helper/other_notes/) tab for details. 
+See [Other Notes](http://wordpress.org/plugins/average-wysiwyg-helper/other_notes/) tab for details.
 
 == Installation ==
 
@@ -113,11 +113,11 @@ Not yet. Soon young grasshopper. Soon.
 
 == Custom Support ==
 
-If you have a custom support need, [please purchase your support ticket here](https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=R7r_BN3GagaT9BfAOcWjgg7HogHWcgH6h-p0crUT-8ZqLk_OarmKVTSgziK&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b08198a0586321b47f5ae7b54ee269d9200b8b). Support tickets are responded to within 24 hours, but we answer them as soon as possible.
+If you have a custom support need, [please purchase your support ticket here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AF7P3TFKQ2C2). Support tickets are responded to within 24 hours, but we answer them as soon as possible.
 
 **How it works**
 
-1.   [Purchase a support ticket for via PayPal](https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=R7r_BN3GagaT9BfAOcWjgg7HogHWcgH6h-p0crUT-8ZqLk_OarmKVTSgziK&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b08198a0586321b47f5ae7b54ee269d9200b8b)
+1.   [Purchase a support ticket for via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AF7P3TFKQ2C2)
 2.   You get a chance to provide the best way to contact you and a description of your need
 3.   I contact you as soon as I can (no less than 24 hours) and help resolve your issue
 
