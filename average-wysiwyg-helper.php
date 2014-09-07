@@ -4,8 +4,8 @@
     Plugin URI: 
     Description: Reveals the prominent HTML elements in the default WYSIWYG editor (TinyMCE) comprehensively, while maintaining edibility as well as any theme styles (in most cases). In effect, you have a WYSIWYG and a WYSIWYM (What You See Is What You Mean) combined. Can also cancel out certain default WordPress styling in the WYSIWYG such as the captions box/border.
     Version: 2.0
-    Author: Joe Rhoney
-    Author URI: http://joerhoney.com/
+    Author: Average
+    Author URI: http://profiles.wordpress.org/averagetechnology
     @since 3.8
         ___                                 
        /   |_   _____  _________ _____ ____
