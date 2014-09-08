@@ -74,7 +74,7 @@ Not yet. Soon young grasshopper. Soon.
 = 2.1 =
 8-Sep-2014
 
-*   Fixes image edit button in WordPress 4.0
+*   Fixes image edit/delete buttons in WordPress 4.0
 
 = 2.0 =
 5-Aug-2014
