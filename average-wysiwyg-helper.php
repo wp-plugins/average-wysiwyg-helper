@@ -1,13 +1,13 @@
 <?php
 /*
     Plugin Name: Average WYSIWYG Helper
-    Plugin URI: 
+    Plugin URI:
     Description: Reveals the prominent HTML elements in the default WYSIWYG editor (TinyMCE) comprehensively, while maintaining edibility as well as any theme styles (in most cases). In effect, you have a WYSIWYG and a WYSIWYM (What You See Is What You Mean) combined. Can also cancel out certain default WordPress styling in the WYSIWYG such as the captions box/border.
-    Version: 2.0
+    Version: 2.1
     Author: Average
-    Author URI: http://profiles.wordpress.org/averagetechnology
+    Author URI: http://profiles.wordpress.org/averagetechnology/
     @since 3.8
-        ___                                 
+        ___
        /   |_   _____  _________ _____ ____
       / /| | | / / _ \/ ___/ __ `/ __ `/ _ \
      / ___ | |/ /  __/ /  / /_/ / /_/ /  __/
@@ -42,8 +42,8 @@ if(!class_exists('avrgwysiwyg_class')) :
       add_options_page(avrgwysiwyg_NICK.' Plugin Options', avrgwysiwyg_NICK, 'manage_options', avrgwysiwyg_ID.'_options', array('avrgwysiwyg_class', 'options_page'));
     }
     public static function options_page()
-    { 
-      if (!current_user_can('manage_options')) 
+    {
+      if (!current_user_can('manage_options'))
       {
         wp_die(__('You do not have sufficient permissions to access this page.'));
       }
@@ -89,19 +89,19 @@ function avrgwysiwyg_help_tab() {
         <p><strong>'.__( 'Legend' ).'</strong></p>
         <ul>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(255,0,105,0.15);">
-					  <strong>P:</strong> '.__('paragraph').'</li>
+            <strong>P:</strong> '.__('paragraph').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(255,150,0,0.35);">
-					  <strong>L:</strong> '.__('unordered list').'</li>
+            <strong>L:</strong> '.__('unordered list').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(255,215,0,0.3);">
-					  <strong>#:</strong> '.__('ordered list').'</li>
+            <strong>#:</strong> '.__('ordered list').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(205,255,0,0.4);">
-					  <strong>('.__('within').' L '.__('or').' #):</strong> '.__('individual list item').'</li>
+            <strong>('.__('within').' L '.__('or').' #):</strong> '.__('individual list item').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(180,235,0,0.4);">
-					  <strong>V:</strong> '.__('div (a box, basically)').'</li>
+            <strong>V:</strong> '.__('div (a box, basically)').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(0,180,235,0.3);">
-					  <strong>1-6:</strong> '.__('heading 1, heading 2, etc.').'</li>
+            <strong>1-6:</strong> '.__('heading 1, heading 2, etc.').'</li>
           <li style="background:rgba(150,0,255,0.1);outline:5px solid rgba(150,0,255,0.1);">
-					  <strong>('.__('highlights').'):</strong> '.__('span (text with added formatting)').'</li>
+            <strong>('.__('highlights').'):</strong> '.__('span (text with added formatting)').'</li>
         </ul>',
     ));
 }

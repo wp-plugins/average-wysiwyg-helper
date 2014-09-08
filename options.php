@@ -1,11 +1,11 @@
 <div class="wrap">
-	<?php screen_icon(); ?>
+  <?php screen_icon(); ?>
   <h2>WYSIWYG Helper</h2>
   <div id="poststuff">
     <div id="post-body" class="metabox-holder columns-2">
       <div id="post-body-content">
-	<form action="options.php" method="post" id="<?php echo $avrgwysiwygID; ?>_options_form" name="<?php echo $avrgwysiwygID; ?>_options_form">
-	<?php settings_fields($avrgwysiwygID.'_options'); ?>
+  <form action="options.php" method="post" id="<?php echo $avrgwysiwygID; ?>_options_form" name="<?php echo $avrgwysiwygID; ?>_options_form">
+  <?php settings_fields($avrgwysiwygID.'_options'); ?>
         <label for="wysiwym_display" >Show WYSIWYM</label>
         <div style="display: inline;" class="noyesswitch">
           <input type="checkbox" name="wysiwym_display" class="noyesswitch-checkbox" id="wysiwym_display" value="1" <?php checked( '1', get_option('wysiwym_display') ); ?> />
@@ -25,10 +25,10 @@
         </div>
         <p class="description hideswitch">Overrides default caption styles (that's all, so far).</p>
 <?php submit_button(); ?>
-	</form>
+  </form>
       </div> <!-- post-body-content -->
-			<!-- sidebar -->
-			<div id="postbox-container-1" class="postbox-container">
+      <!-- sidebar -->
+      <div id="postbox-container-1" class="postbox-container">
             <h2>Support Tickets</h2>
             <p>If you need custom support for this plugin (Average WYSIWYG Helper) or any other Average plugin, you can purchase help with a support ticket below. Support tickets are responded to within 24 hours, but we answer them as soon as possible.</p>
             <p><strong>How it works</strong></p>
@@ -53,11 +53,11 @@
                 </tr></tbody></table>
               <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" type="image" />
               <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
-              
+
         </form>
             <p><strong>Note</strong>: This is for&nbsp;<em>custom</em>&nbsp;needs for help, not problems with the plugin, or instructions that should already be explain in the description. If you feel there are important details omitted from the <a href="http://wordpress.org/plugins/average-wysiwyg-helper/" target="_blank">Description</a>, <a href="http://wordpress.org/plugins/average-wysiwyg-helper/installation/" target="_blank">Installation</a> steps, etc. of the plugin, please report them in the <a href="http://wordpress.org/support/plugin/average-wysiwyg-helper" target="_blank">Support forum</a>. Thanks!</p>
-			</div> <!-- #postbox-container-1 .postbox-container -->
-		</div> <!-- #post-body .metabox-holder .columns-2 -->
-		<br class="clear">
-	</div> <!-- #poststuff -->
+      </div> <!-- #postbox-container-1 .postbox-container -->
+    </div> <!-- #post-body .metabox-holder .columns-2 -->
+    <br class="clear">
+  </div> <!-- #poststuff -->
 </div>
