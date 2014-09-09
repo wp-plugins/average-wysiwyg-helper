@@ -29,6 +29,9 @@ if(!class_exists('avrgwysiwyg_class')) :
   class avrgwysiwyg_class
   {
     const VERSION = '2.1';
+    function avrgwysiwyg_class() {
+      add_action( 'network_admin_notices', array( $this, 'post_upgrade_nag') );
+    }
     public static function file_path($file)
     {
       return ABSPATH.'wp-content/plugins/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)).$file;
