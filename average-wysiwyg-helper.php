@@ -30,6 +30,8 @@ if(!class_exists('avrgwysiwyg_class')) :
   {
     const VERSION = '2.1';
     function avrgwysiwyg_class() {
+      if ( !defined('I_SUPPORTED_AVERAGE_WYSIWYG_HELPER') )
+        add_action( 'admin_notices', array( $this, 'post_upgrade_nag') );
       add_action( 'network_admin_notices', array( $this, 'post_upgrade_nag') );
     }
     public static function file_path($file)
