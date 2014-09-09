@@ -64,7 +64,7 @@ if(!class_exists('avrgwysiwyg_class')) :
       }
       return $mce_css;
     }
-    public function avrgwysiwyg_upgrade_nag() {
+    public function post_upgrade_nag() {
       if ( !current_user_can('install_plugins') ) return;
       $avrgwysiwyg_v = 'avrgwysiwyg_version';
       $avrgFavs = network_admin_url('plugin-install.php?tab=favorites&user=average.technology');
