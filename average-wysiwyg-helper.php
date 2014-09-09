@@ -78,7 +78,7 @@ if(!class_exists('avrgwysiwyg_class')) :
   {
     add_action('admin_init', array('avrgwysiwyg_class', 'register'));
     add_action('admin_menu', array('avrgwysiwyg_class', 'menu'));
-    add_action('admin_init', array('avrgwysiwyg_class', 'post_upgrade_nag'));
+    add_action('admin_notices', array('avrgwysiwyg_class', 'post_upgrade_nag'));
   }
   add_filter( 'mce_css', array('avrgwysiwyg_class', 'css'));
 endif;
