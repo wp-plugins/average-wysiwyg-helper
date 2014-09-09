@@ -63,6 +63,15 @@ if(!class_exists('avrgwysiwyg_class')) :
       }
       return $mce_css;
     }
+    public function avrgwysiwyg_upgrade_nag() {
+      if ( !current_user_can('install_plugins') ) return;
+      $avrgwysiwyg_v = 'avrgwysiwyg_version';
+      $avrgFavs = network_admin_url('plugin-install.php?tab=favorites&user=average.technology');
+      if ( get_site_option( $avrgwysiwyg_v ) == self::VERSION ) return;
+      $msg = sprintf(__('Thank you for upgrading Average WYSIWYG Helper! If you like this plugin, please consider <a href="%s" target="_blank">rating it</a> and trying out <a href="%s" target="_blank">our other plugins</a>!', 'image-widget'),'http://wordpress.org/support/view/plugin-reviews/average-wysiwyg-helper',$avrgFavs);
+      echo "<div class='update-nag'>$msg</div>";
+      update_site_option( $avrgwysiwyg_v, self::VERSION );
+    }
   }
   if (is_admin())
   {
