@@ -69,12 +69,14 @@ if(!class_exists('avrgwysiwyg_class')) :
       $avrgwysiwyg_v = 'avrgwysiwyg_version';
       if(get_bloginfo('version') >= "4.0"){
         $avrgFavs = network_admin_url('plugin-install.php?tab=favorites&user=average.technology');
+        $avrgFavsTarg = '';
       }
       else {
         $avrgFavs = 'http://profiles.wordpress.org/averagetechnology';
+        $avrgFavsTarg = ' target="_blank"';
       }
       if ( get_site_option( $avrgwysiwyg_v ) == self::VERSION ) return;
-      $msg = sprintf(__('Thank you for upgrading Average WYSIWYG Helper! If you like this plugin, please consider <a href="%s" target="_blank">rating it</a> and trying out <a href="%s">our other plugins</a>!'),'http://wordpress.org/support/view/plugin-reviews/average-wysiwyg-helper',$avrgFavs);
+      $msg = sprintf(__('Thank you for upgrading Average WYSIWYG Helper! If you like this plugin, please consider <a href="%s" target="_blank">rating it</a> and trying out <a href="%s"'.$avrgFavsTarg.'>our other plugins</a>!'),'http://wordpress.org/support/view/plugin-reviews/average-wysiwyg-helper',$avrgFavs);
       echo "<div class='update-nag'>$msg</div>";
       update_site_option( $avrgwysiwyg_v, self::VERSION );
     }
