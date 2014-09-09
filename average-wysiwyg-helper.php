@@ -67,7 +67,7 @@ if(!class_exists('avrgwysiwyg_class')) :
     public function post_upgrade_nag() {
       if ( !current_user_can('install_plugins') ) return;
       $avrgwysiwyg_v = 'avrgwysiwyg_version';
-      if(bloginfo('version') >= "4.0"){
+      if(get_bloginfo('version') >= "4.0"){
         $avrgFavs = network_admin_url('plugin-install.php?tab=favorites&user=average.technology');
       }
       else {
