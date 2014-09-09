@@ -28,6 +28,7 @@ if(!class_exists('avrgwysiwyg_class')) :
   define('avrgwysiwyg_NICK', 'WYSIWYG Helper');
   class avrgwysiwyg_class
   {
+    const VERSION = '2.1';
     public static function file_path($file)
     {
       return ABSPATH.'wp-content/plugins/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)).$file;
