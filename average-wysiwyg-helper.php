@@ -29,11 +29,6 @@ if(!class_exists('avrgwysiwyg_class')) :
   class avrgwysiwyg_class
   {
     const VERSION = '2.1';
-    function avrgwysiwyg_class() {
-      if ( !defined('I_SUPPORTED_AVERAGE_WYSIWYG_HELPER') )
-        add_action( 'admin_notices', array( $this, 'post_upgrade_nag') );
-      add_action( 'network_admin_notices', array( $this, 'post_upgrade_nag') );
-    }
     public static function file_path($file)
     {
       return ABSPATH.'wp-content/plugins/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)).$file;
@@ -83,6 +78,7 @@ if(!class_exists('avrgwysiwyg_class')) :
   {
     add_action('admin_init', array('avrgwysiwyg_class', 'register'));
     add_action('admin_menu', array('avrgwysiwyg_class', 'menu'));
+    add_action('admin_init', array('avrgwysiwyg_class', 'post_upgrade_nag'));
   }
   add_filter( 'mce_css', array('avrgwysiwyg_class', 'css'));
 endif;
@@ -104,19 +100,19 @@ function avrgwysiwyg_help_tab() {
         <p><strong>'.__( 'Legend' ).'</strong></p>
         <ul>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(255,0,105,0.15);">
-					  <strong>P:</strong> '.__('paragraph').'</li>
+            <strong>P:</strong> '.__('paragraph').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(255,150,0,0.35);">
-					  <strong>L:</strong> '.__('unordered list').'</li>
+            <strong>L:</strong> '.__('unordered list').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(255,215,0,0.3);">
-					  <strong>#:</strong> '.__('ordered list').'</li>
+            <strong>#:</strong> '.__('ordered list').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(205,255,0,0.4);">
-					  <strong>('.__('within').' L '.__('or').' #):</strong> '.__('individual list item').'</li>
+            <strong>('.__('within').' L '.__('or').' #):</strong> '.__('individual list item').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(180,235,0,0.4);">
-					  <strong>V:</strong> '.__('div (a box, basically)').'</li>
+            <strong>V:</strong> '.__('div (a box, basically)').'</li>
           <li style="border-radius:3px;box-sizing:border-box;border:1px solid rgba(0,180,235,0.3);">
-					  <strong>1-6:</strong> '.__('heading 1, heading 2, etc.').'</li>
+            <strong>1-6:</strong> '.__('heading 1, heading 2, etc.').'</li>
           <li style="background:rgba(150,0,255,0.1);outline:5px solid rgba(150,0,255,0.1);">
-					  <strong>('.__('highlights').'):</strong> '.__('span (text with added formatting)').'</li>
+            <strong>('.__('highlights').'):</strong> '.__('span (text with added formatting)').'</li>
         </ul>',
     ));
 }
