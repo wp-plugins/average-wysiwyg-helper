@@ -3,7 +3,7 @@
     Plugin Name: Average WYSIWYG Helper
     Plugin URI:
     Description: Reveals the prominent HTML elements in the default WYSIWYG editor (TinyMCE) comprehensively, while maintaining edibility as well as any theme styles (in most cases). In effect, you have a WYSIWYG and a WYSIWYM (What You See Is What You Mean) combined. Can also cancel out certain default WordPress styling in the WYSIWYG such as the captions box/border.
-    Version: 2.1
+    Version: 2.2
     Author: Average
     Author URI: http://profiles.wordpress.org/averagetechnology/
     @since 3.8
