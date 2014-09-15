@@ -1,7 +1,7 @@
 
 === Average WYSIWYG Helper ===
 
-Contributors: joerhoney,average.technology
+Contributors: averageheros,joerhoney,average.technology
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AF7P3TFKQ2C2
 Tags: wysiwym,wysiwyg,tinymce,element highlighter
 Requires at least: 3.0.1
@@ -33,7 +33,7 @@ Average WYSIWYG Helper also provides an option to cancel out certain default sty
 
 **Custom support tickets are available**
 
-See [Other Notes](http://wordpress.org/plugins/average-wysiwyg-helper/other_notes/) tab for details. 
+See [Other Notes](http://wordpress.org/plugins/average-wysiwyg-helper/other_notes/) tab for details.
 
 == Installation ==
 
