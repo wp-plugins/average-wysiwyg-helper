@@ -1,7 +1,7 @@
 
 === Average WYSIWYG Helper ===
 
-Contributors: averageheros,joerhoney,average.technology
+Contributors: addfunc,joerhoney,average.technology
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AF7P3TFKQ2C2
 Tags: wysiwym,wysiwyg,tinymce,element highlighter
 Requires at least: 3.0.1
