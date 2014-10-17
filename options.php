@@ -52,8 +52,7 @@
                   <td><input maxlength="200" name="os1" type="text" /></td>
                 </tr></tbody></table>
               <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" type="image" />
-              <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
-              
+              <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-small.png" alt="Buy now with PayPal" />
         </form>
             <p><strong>Note</strong>: This is for&nbsp;<em>custom</em>&nbsp;needs for help, not problems with the plugin, or instructions that should already be explain in the description. If you feel there are important details omitted from the <a href="http://wordpress.org/plugins/average-wysiwyg-helper/" target="_blank">Description</a>, <a href="http://wordpress.org/plugins/average-wysiwyg-helper/installation/" target="_blank">Installation</a> steps, etc. of the plugin, please report them in the <a href="http://wordpress.org/support/plugin/average-wysiwyg-helper" target="_blank">Support forum</a>. Thanks!</p>
 			</div> <!-- #postbox-container-1 .postbox-container -->
