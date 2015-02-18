@@ -1,18 +1,21 @@
 
 === Average WYSIWYG Helper ===
 
-Contributors: addfunc,average.technology,joerhoney
+Contributors: average.technology,joerhoney
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AF7P3TFKQ2C2
 Tags: wysiwym,wysiwyg,tinymce,element highlighter
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 2.2
+Stable tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Highlights prominent HTML elements in the WYSIWYG editor, to help Editors see what they're editing. Sort of a WYSIWYM (the M is for mean).
 
 == Description ==
+
+> **Notice**
+> Average is changing its name to AddFunc (good thing). Therefore, this plugin has been improved and republished as [AddFunc WYSIWYG Helper](https://wordpress.org/plugins/addfunc-wysiwyg-helper). In the "AddFunc version", the WYSIWYG Helper settings are a user preference rather than a universal preference that can only be managed by an Administrator. The "AddFunc version" is compatible with the "Average version," so installation and activation is risk-free. Just deactivate the old one, install/activate the new one, turn it on in your user profile preferences and you're done. Switching to the "AddFunc version" is optional. The "Average version" will remain available with minimal support until it becomes a burden for AddFunc (probably for many years to come, as of 2015). Any new features will only be added to the "AddFunc version," so it is of course the recommended version (at least moving forward). Thanks!
 
 Average WYSIWYG Helper is a lightweight plugin that uses CSS to highlight prominent HTML elements in the default WYSIWYG editor (Tiny MCE), to help Editors see what they're editing. This in effect creates a sort of combination WYSIWYG/[WYSIWYM](http://mcs.open.ac.uk/nlg/old_projects/wysiwym/) (What You See Is What You Mean) combination. With the WYSIWYM option turned on, the following elements are highlighted with a colored border and label:
 
@@ -70,6 +73,11 @@ Not yet. Soon young grasshopper. Soon.
 6. Includes a help tab for quick and easy reference.
 
 == Changelog ==
+
+= 2.2.1 =
+18-Feb-2015
+
+*   Adds notice about the new AddFunc WYSIWYG Helper (yeah, it's just a plug, but you'll definitely want to know about the AddFunc version—it makes so much more sense)
 
 = 2.2 =
 15-Sep-2014

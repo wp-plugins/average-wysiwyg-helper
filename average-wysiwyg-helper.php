@@ -3,7 +3,7 @@
     Plugin Name: Average WYSIWYG Helper
     Plugin URI:
     Description: Reveals the prominent HTML elements in the default WYSIWYG editor (TinyMCE) comprehensively, while maintaining edibility as well as any theme styles (in most cases). In effect, you have a WYSIWYG and a WYSIWYM (What You See Is What You Mean) combined. Can also cancel out certain default WordPress styling in the WYSIWYG such as the captions box/border.
-    Version: 2.2
+    Version: 2.2.1
     Author: Average
     Author URI: http://profiles.wordpress.org/averagetechnology/
     @since 3.8
@@ -28,7 +28,7 @@ if(!class_exists('avrgwysiwyg_class')) :
   define('avrgwysiwyg_NICK', 'WYSIWYG Helper');
   class avrgwysiwyg_class
   {
-    const VERSION = '2.1';
+    const VERSION = '2.2.1';
     public static function file_path($file)
     {
       return ABSPATH.'wp-content/plugins/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)).$file;
@@ -68,15 +68,17 @@ if(!class_exists('avrgwysiwyg_class')) :
       if ( !current_user_can('install_plugins') ) return;
       $avrgwysiwyg_v = 'avrgwysiwyg_version';
       if(get_bloginfo('version') >= "4.0"){
-        $avrgFavs = network_admin_url('plugin-install.php?tab=favorites&user=average.technology');
+        $avrg2aF = network_admin_url('plugin-install.php?tab=search&s=AddFunc+WYSIWYG+Helper');
+        $avrgFavs = network_admin_url('plugin-install.php?tab=favorites&user=AddFunc');
         $avrgFavsTarg = '';
       }
       else {
-        $avrgFavs = 'http://profiles.wordpress.org/averagetechnology';
+        $avrg2aF = 'https://wordpress.org/plugins/addfunc-wysiwyg-helper/';
+        $avrgFavs = 'http://profiles.wordpress.org/addfunc';
         $avrgFavsTarg = ' target="_blank"';
       }
       if ( get_site_option( $avrgwysiwyg_v ) == self::VERSION ) return;
-      $msg = sprintf(__('Thank you for updating Average WYSIWYG Helper! If you like this plugin, please consider <a href="%s" target="_blank">rating it</a> and trying out <a href="%s"'.$avrgFavsTarg.'>our other plugins</a>!'),'http://wordpress.org/support/view/plugin-reviews/average-wysiwyg-helper',$avrgFavs);
+      $msg = sprintf(__('AddFunc is the new Average. Switch to  <a href="%s"'.$avrgFavsTarg.'>AddFunc WYSIWYG Helper</a> to make your WYSIWYG Helper settings based on User preference rather than Administrator dictation. Also, try out <a href="%s"'.$avrgFavsTarg.'>our other plugins</a>!'),$avrg2aF,$avrgFavs);
       echo "<div class='update-nag'>$msg</div>";
       update_site_option( $avrgwysiwyg_v, self::VERSION );
     }
