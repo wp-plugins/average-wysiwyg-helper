@@ -1,11 +1,11 @@
 
 === Average WYSIWYG Helper ===
 
-Contributors: addfunc,average.technology,joerhoney
+Contributors: AddFunc,average.technology,joerhoney
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AF7P3TFKQ2C2
 Tags: wysiwym,wysiwyg,tinymce,element highlighter
 Requires at least: 3.0.1
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
